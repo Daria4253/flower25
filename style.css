@@ -1,7 +1,15 @@
-header{ 
-    background: #f9e0f0;
+.gray-bkg{
+    background:#f1daeb;
 }
 
 .logo{
     width: 160px;
+}
+
+.intro-block{
+    display: flex;
+}
+.centered-block{
+    margin: 0 auto;
+    width: 1157px;
 }
