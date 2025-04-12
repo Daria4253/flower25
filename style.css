@@ -15,8 +15,6 @@
     justify-content:center;
     gap: 20px;
     cursor: pointer;
-    
-    
 }
 
 .intro-text{
@@ -70,10 +68,19 @@
     }
 
     .centered-block{
-        margin-top: 30px;
         display: flex;
-        width: 100%;
+        flex-wrap: wrap; /* Перенос на новую строку */
         justify-content: center;
+        margin-top: 30px;
+        gap: 20px; /* Отступ между карточками */
+        max-width: 1200px; /* Ограничение ширины */
+        margin: 30px auto; /* Центрирование блока на странице */
+    }
+
+    .flowers-row{
+        display: flex;
+        justify-content: center; /* Центрирование карточек в ряду */
+        gap: 10px; /* Отступ между карточками */
     }
 
     .flower-product{
@@ -109,10 +116,28 @@
         position: absolute; /* Накладываем поверх картинки */
         color: white;      /* Белый цвет текста */
         font-family: 'Montserrat', sans-serif;
-        font-size: 18px;
+        font-size: 25px;
         font-weight: 400;
         text-shadow: 1px 1px 3px rgba(0,0,0,0.3); /* Легкая тень для контраста */
         padding: 10px;   /* Отступы слева/справа */
     }
     
+    .description-service{
+        background-color: #debc88;
+        color: #000;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 25px;
+        font-weight: 400;
+        text-align: center;
+        width: 100%; /* Растягиваем на всю ширину */
+        padding: 50px 10px; /* Внутренние отступы вместо фиксированной высоты */
+        box-sizing: border-box; /* Чтобы padding не влиял на ширину */
+    }
+
+    .flower-service{
+        font-family: "Comforter", cursive;
+        font-weight: 200;
+        font-style: normal;
+        font-size: 80px;
+    }
     
