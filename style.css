@@ -1,13 +1,90 @@
+.about-studio{
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 100%;
+    z-index: 1;
+    
+
+}
+.title{
+    margin: 0;
+    padding: 0;
+    font-size: 40px;
+    font-weight: 300;
+    font-family: 'Montserrat', sans-serif;
+    
+}
+
+.under-title{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 25px;
+    font-weight: 300;
+    margin-top: 10px;
+    padding: 0;
+}
+
 .intro-block{
-    background-image: url("flower bck1.jpg");
+    background-image: url("Flower bck7.jpg");
     background-repeat: no-repeat;
     width: 100%;
     height: 600px;
     background-size: cover;
    }
 
+   .slider {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 600px;
+    z-index: -1; /* Помещаем за контентом */
+    overflow: hidden;
+   }
+
+   .slide {
+    position: absolute;
+    width: 100%;
+    height: 600px;
+    background-size: cover;
+    background-position: center;
+    opacity: 0;
+    transition: opacity 1s ease;
+   }
+
+   .slide.active {
+    opacity: 1;
+}
+
+/* Стили для индикаторов */
+.slider-dots {
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 10px;
+    z-index: 10;
+    }
+
+.slider-dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.5);
+    cursor: pointer;
+    transition: all 0.3s ease;
+    }
+
+.slider-dot.active {
+    background: white;
+    transform: scale(1.2);
+    }
+
 .intro-content{
-    position: absolute; /* Абсолютное позиционирование */
+    position: absolute;
     right: 25px; /* Фиксированный отступ справа */
     margin-right: 30px;
     font-family: 'Montserrat', sans-serif;
@@ -15,7 +92,7 @@
     justify-content:center;
     gap: 20px;
     cursor: pointer;
-}
+    }
 
 .intro-text{
     text-align: right;
@@ -38,7 +115,7 @@
         line-height: 1.6; /* Увеличивает расстояние между ВСЕМИ строками */
         margin-top: 40px;
         font-family: 'Montserrat', sans-serif;
-        font-size: 15px;
+        font-size: 20px;
         font-weight: 500;
     }
     .intro-button{
@@ -49,7 +126,7 @@
         border: 1px solid #000;      /* Черная рамка 1px */
         color: #000;
         cursor: pointer;
-        font-size: 15px;
+        font-size: 18px;
         font-weight: 500;
         line-height: 18px;   
     }
@@ -140,4 +217,99 @@
         font-style: normal;
         font-size: 80px;
     }
+       
+    .flower-service-text{
+        line-height: 1.5; /* Увеличивает расстояние между ВСЕМИ строками */
     
+    }
+
+    .service-button{
+        font-family: 'Montserrat', sans-serif;
+        padding: 12px 24px;
+        margin-top: 50px;
+        background-color: transparent; /* Прозрачный фон */
+        border: 1px solid #000;      /* Черная рамка 1px */
+        color: #000;
+        cursor: pointer;
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 18px;
+    }
+
+    .service-button:hover {
+        background-color: #fce5ca; /* Молочный цвет фона */
+    }
+
+    .about-us {
+        position: relative; /* Для позиционирования текста */
+        margin: 30px auto 0;
+        background-image: url("flo.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        width: 100%;
+        height: 500px;
+        border-radius: 8px; /* Опционально: скругление углов */
+        overflow: hidden; /* Обрезаем выходящие за границы элементы */
+        margin-bottom: 30px;
+    }
+    
+    .text-about-us {
+        position: absolute;
+        left: 14%;
+        top: 50%;
+        transform: translateY(-50%);
+        font-family: 'Montserrat', sans-serif;
+        font-size: 20px;
+        font-weight: 400;
+        background: rgba(255, 255, 255, 0.9); /* Полупрозрачный белый */
+        padding: 40px;
+        width: 400px; /* Увеличил для лучшей читаемости */
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        line-height: 1.5;
+        border-left: 4px solid #debc88; /* Акцентная полоса как в подписке */
+    }
+
+    .about-us-list ::before{
+        content: "\2014 \2003";
+        color: #000;
+    }
+    
+    .about-us-list{
+        font-family: 'Montserrat', sans-serif;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 24px;
+        margin-top: 23px;
+    }
+
+    .footer-block{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 30px 0;
+        background-color: #f8f8f8; /* Цвет фона */
+
+    }
+    .footer-title{
+        margin-bottom: 20px;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 24px;
+        color: #333;
+    }
+
+    .logos img{
+    gap: 20px;
+    width: 40px;
+    height: 40px;
+    transition: transform 0.3s ease;
+    }
+
+    .logos:hover img {
+        transform: scale(1.1); /* Эффект при наведении */
+    }
+
+    .social-links{
+        display: flex;
+         gap: 20px; /* Расстояние между иконками */
+    }

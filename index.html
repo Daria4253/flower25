@@ -3,13 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Студия цветов в Новом Уренгое</title>
+    <title>Цветы Новый Уренгой</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Comforter&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
  </head>
  <body>
     <div class="intro-block">
+        <div class="slider"> 
+            <div class="slide active" style="background-image: url('flower bck1.jpg');"></div>
+            <div class="slide" style="background-image: url('flower bck2.jpg');"></div>
+            <div class="slide" style="background-image: url('flower bck3.jpg');"></div>
+            
+            <!-- Индикаторы -->
+            <div class="slider-dots"></div>
+        </div>
+        <div class="about-studio">
+            <H2 class="title"> NORTH GLOW</H2>
+            <H3 class="under-title"> Студия цветов в Новом Уренгое</H3>
+        </div>
         <div class="intro-content">
             <h2>О нас</h2>
             <h2>Доставка</h2>
@@ -59,7 +72,33 @@
     </div>
     <div class="description-service">
         <h2 class="flower-service">Цветочная подписка</h2>
-        <h3>Вы можете оформить цветочную подписку <br> и мы будем ежемесячно доставлять Вам свежие цветы из выбранного Вами ассортимента.</h3>
+        <h3 class="flower-service-text">Вы можете оформить цветочную подписку <br> и мы будем ежемесячно доставлять Вам свежие цветы из выбранного Вами ассортимента.</h3>
+        <button class="service-button"> Посмотреть наличие</button>    
     </div>
+    <div class="about-us">
+        <h3 class="text-about-us"> NORTH GLOW - это история про любовь к цветам на крайнем Севере.
+            <ul class="about-us-list">
+                <li>Доставляем букеты в термокоробках</li>
+                <li>Учитываем индивидуальность заказчика</li>
+                <li>Работаем с организациями</li>
+            </ul>
+        </h3>      
+    </div>
+    <div style="position:relative;overflow:hidden;"><a href="https://yandex.ru/maps/11230/noviy-urengoy/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">Новый Уренгой</a><a href="https://yandex.ru/maps/11230/noviy-urengoy/?ll=76.667386%2C66.122097&mode=whatshere&utm_medium=mapframe&utm_source=maps&whatshere%5Bpoint%5D=76.663969%2C66.121371&whatshere%5Bzoom%5D=17&z=16" style="color:#eee;font-size:12px;position:absolute;top:14px;">Микрорайон Славянский, 1/3 на карте Нового Уренгоя — Яндекс Карты</a><iframe src="https://yandex.ru/map-widget/v1/?ll=76.667386%2C66.122097&mode=whatshere&whatshere%5Bpoint%5D=76.663969%2C66.121371&whatshere%5Bzoom%5D=17&z=16" width="100%" height="400" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe></div>
+    <footer class="footer-block">
+        <H3 class="footer-title"> Наши контакты</H3>
+            <div class="social-links">  
+                <a href="https://vk.com" target="_blank" class="logos">
+                    <img src="vk.png" alt="Вконтакте">
+                </a>
+                <a href="https://instagram.com" target="_blank" class="logos">
+                    <img src="inst.png" alt="Инстаграм">
+                </a>
+                <a href="https://web.telegram.org/k/" target="_blank" class="logos">
+                    <img src="telega.png" alt="Телеграм">
+                </a>
+            </div>
+    </footer>
+    <script src="slider.js"></script>
  </body>
      
